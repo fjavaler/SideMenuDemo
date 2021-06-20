@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		F818705B267FD21C0086C776 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F818705A267FD21C0086C776 /* ContentView.swift */; };
 		F818705D267FD21D0086C776 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F818705C267FD21D0086C776 /* Assets.xcassets */; };
 		F8187060267FD21D0086C776 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F818705F267FD21D0086C776 /* Preview Assets.xcassets */; };
+		F8187069267FD2660086C776 /* SwiftUISideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = F8187068267FD2660086C776 /* SwiftUISideMenu */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8187069267FD2660086C776 /* SwiftUISideMenu in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = SideMenuDemo;
+			packageProductDependencies = (
+				F8187068267FD2660086C776 /* SwiftUISideMenu */,
+			);
 			productName = SideMenuDemo;
 			productReference = F8187055267FD21C0086C776 /* SideMenuDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +117,9 @@
 				Base,
 			);
 			mainGroup = F818704C267FD21C0086C776;
+			packageReferences = (
+				F8187067267FD2660086C776 /* XCRemoteSwiftPackageReference "swiftui-side-menu" */,
+			);
 			productRefGroup = F8187056267FD21C0086C776 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -328,6 +336,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F8187067267FD2660086C776 /* XCRemoteSwiftPackageReference "swiftui-side-menu" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/globulus/swiftui-side-menu/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F8187068267FD2660086C776 /* SwiftUISideMenu */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8187067267FD2660086C776 /* XCRemoteSwiftPackageReference "swiftui-side-menu" */;
+			productName = SwiftUISideMenu;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F818704D267FD21C0086C776 /* Project object */;
 }
